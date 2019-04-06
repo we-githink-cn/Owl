@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1554436141461_3574';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [ 'errorHandler' ]
 
   exports.jwt = {
     enable: true,
@@ -29,6 +29,21 @@ module.exports = appInfo => {
     }
   }
 
+  // 数据库信息配置
+  exports.sequelize = {
+    // 数据库类型
+    dialect: "mysql",
+    // host
+    host: "localhost",
+    // 端口号
+    port: "3306",
+    // 用户名
+    username: "root",
+    // 密码
+    password: "xxx",
+    // 数据库名
+    database: "AEMM"
+  };
 
   // add your user config here
   const userConfig = {

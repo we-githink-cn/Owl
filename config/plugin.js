@@ -8,3 +8,7 @@ exports.aop = {
     enable: true,
     package: 'egg-aop',
 };
+exports.sequelize = {
+    enable: true,
+    package: "egg-sequelize"
+};
