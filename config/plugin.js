@@ -12,3 +12,7 @@ exports.sequelize = {
     enable: true,
     package: "egg-sequelize"
 };
+exports.bcrypt = {
+    enable: true,
+    package: 'egg-bcrypt'
+}

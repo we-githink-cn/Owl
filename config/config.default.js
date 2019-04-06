@@ -27,6 +27,10 @@ module.exports = appInfo => {
     csrf: {
       enable: false,
     }
+  };
+
+  exports.bcrypt = {
+    saltRounds: 10 // default 10
   }
 
   // 数据库信息配置
